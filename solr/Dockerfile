@@ -7,4 +7,6 @@ RUN apt-get clean
 
 EXPOSE 8080
 
+CMD /etc/init.d/tomcat6 start
+
 CMD tailf /var/log/tomcat6/*
