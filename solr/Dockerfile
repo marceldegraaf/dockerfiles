@@ -6,3 +6,5 @@ RUN apt-get install -y wget default-jre-headless solr-tomcat
 RUN apt-get clean
 
 EXPOSE 8080
+
+CMD tailf /var/log/tomcat6/*
